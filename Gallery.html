@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taesflicks - Gallery</title>
+    <style>
+        /* Styles for the header */
+        header {
+            background-color: forestgreen;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Styles for the navigation menu */
+        nav {
+            background-color: black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav ul li a:hover {
+            color: #ff6f61;
+        }
+
+        /* Styles for the gallery */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            grid-gap: 10px;
+            padding: 20px;
+            background-color: darkolivegreen;
+        }
+
+        .photo {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s;
+        }
+
+        .photo img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .photo:hover {
+            transform: scale(1.1);
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Taesflicks Gallery</h1>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="frontPage.html">Home</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Gallery -->
+    <div class="gallery">
+        <!-- Placeholder images -->
+        <img class="photo" src="Bottle.JPEG" alt="Bottle">
+        <img class="photo" src="IMG_0327.jpeg" alt="IMG_0327">
+        <img class="photo" src="leaf.jpeg" alt="leaf" >
+        <img class="photo" src="Tunnel.jpeg" alt="Tunnel">
+        <img class="photo" src="Flame.JPEG" alt="Flame">
+        <img class="photo" src="70D2E203-F776-4B62-B9FF-1AC70FB5F56B.JPG" alt="Bottle">
+        <img class="photo" src="BD1F8977-F4A3-4F60-9B39-0AA79E4AA93F.JPG" alt="IMG_0327">
+        <img class="photo" src="D9117368-074A-4C5C-96FC-28B9468B1F93.JPG" alt="IMG_5148">
+        <img class="photo" src="IMG_0100.JPG" alt="leaf" >
+        <img class="photo" src="IMG_0119.JPG" alt="Tunnel">
+        <img class="photo" src="IMG_1667.JPG" alt="Flame">
+        <img class="photo" src="IMG_1668.JPG" alt="Bottle">
+        <img class="photo" src="IMG_3515 (1).JPG" alt="leaf" >
+        <img class="photo" src="IMG_5094.JPG" alt="Tunnel">
+        <img class="photo" src="IMG_5113.JPG" alt="Flame">
+        <img class="photo" src="IMG_5124.JPG" alt="Flame">
+        <img class="photo" src="IMG_5259 (1).JPG" alt="Bottle">
+        <img class="photo" src="autumn.JPG" alt="IMG_0327">
+        <img class="photo" src="IMG_5379.JPG" alt="IMG_5148">
+        <img class="photo" src="IMG_5929.JPG" alt="leaf" >
+        <img class="photo" src="IMG_6872.JPG" alt="Tunnel">
+        <img class="photo" src="IMG_8109.JPG" alt="Flame">
+        <!-- Add more images here -->
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Taesflicks. All rights reserved.</p>
+    </footer>
+</body>
+</html>
