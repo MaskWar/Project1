@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | Taesflicks</title>
+    <style>
+        header {
+            background-color: forestgreen;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Styles for the navigation menu */
+        nav {
+            background-color: #333;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        nav ul li a:hover {
+            color: #ff6f61;
+        }
+
+        /* Styles for the contact info */
+        .contact-info {
+            background-color: darkolivegreen;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .contact-info p {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Additional styles for the form */
+        .main-content form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f2f2f2;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .main-content form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .main-content form input[type="text"],
+        .main-content form input[type="email"],
+        .main-content form input[type="datetime-local"],
+        .main-content form select {
+            width: calc(100% - 10px);
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .main-content form input[type="submit"] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .main-content form input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Welcome to Taesflicks</h1>
+        <p>Your ultimate destination for stunning photography</p>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="signUp.html">Sign Up</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <h2>Sign Up for an Appointment</h2>
+        <form action="submit_form.php" method="POST">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="appointmentDate">Date of Appointment:</label>
+            <input type="datetime-local" id="appointmentDate" name="appointmentDate" required>
+
+            <label for="theme">Theme:</label>
+            <select id="theme" name="theme">
+                <option value="landscape">Landscape</option>
+                <option value="portrait">Portrait</option>
+                <option value="nature">Nature</option>
+                <option value="urban">Urban</option>
+                <option value="graduation">Graduation</option>
+                <option value="other">Other TBD</option>
+            </select>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Taesflicks. All rights reserved.</p>
+    </footer>
+</body>
+</html>
